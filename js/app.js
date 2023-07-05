@@ -7,12 +7,12 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let userData = {
-    firstname: firstname.value,
-    lastname: lastname.value,
-    password: password.value,
+    title: firstname.value,
+    price: lastname.value,
+    count: password.value,
   };
 
-  fetch("https://sabzlearn-630dd-default-rtdb.firebaseio.com/users.json", {
+  fetch("https://sabzlearn-630dd-default-rtdb.firebaseio.com/products.json", {
     method: "POST",
     headers: {
       "content-type": "application/json",
